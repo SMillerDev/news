@@ -33,8 +33,8 @@ body:
         - Webcron
         - Ajax
         - Python news updater
-  validations:
-    required: true
+    validations:
+      required: true
   - type: input
     id: php-version
     attributes:
