@@ -4,9 +4,7 @@ labels: [bug]
 body:
   - type: checkboxes
     attributes:
-      label: Code of Conduct
-      description: The Code of Conduct helps create a safe space for everyone. We require
-        that everyone agrees to it.
+      label: Pre-issue checks 
       options:
         - label: I have read the [CONTRIBUTING.md](https://github.com/nextcloud/news/blob/master/CONTRIBUTING.md) and followed the provided tips
           required: true
