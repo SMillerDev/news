@@ -1,7 +1,6 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: [bug, triage]
+labels: [bug]
 body:
   - type: checkboxes
     attributes:
@@ -13,6 +12,53 @@ body:
           required: true
         - label: I accept that the issue will be closed without comment if I do not fill out all items in the issue template.
           required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: News app version
+    validations:
+      required: true
+  - type: input
+    id: server-version
+    attributes:
+      label: Nextcloud server version
+    validations:
+      required: true
+  - type: dropdown
+    id: cron
+    attributes:
+      label: What cron version are you using?
+      options:
+        - System cron
+        - Webcron
+        - Ajax
+        - Python news updater
+  validations:
+    required: true
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+    validations:
+      required: true
+  - type: input
+    id: db-version
+    attributes:
+      label: Database type and version
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser and version
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Operating system and version
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Explain the Problem
