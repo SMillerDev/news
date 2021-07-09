@@ -1,0 +1,42 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: [bug, triage]
+body:
+  - type: checkboxes
+    attributes:
+      label: Code of Conduct
+      description: The Code of Conduct helps create a safe space for everyone. We require
+        that everyone agrees to it.
+      options:
+        - label: I have read the [CONTRIBUTING.md](https://github.com/nextcloud/news/blob/master/CONTRIBUTING.md) and followed the provided tips
+          required: true
+        - label: I accept that the issue will be closed without comment if I do not fill out all items in the issue template.
+          required: true
+  - type: textarea
+    attributes:
+      label: Explain the Problem
+      description: What problem did you encounter?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: Explain what you did to encounter the issue
+      placeholder: |
+        1. Click
+        2. Drag
+        3. ??
+        4. Profit!
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Nextcloud log
+      description: Lines from the nextcloud log
+      render: text
+  - type: textarea
+    attributes:
+      label: Contents of Browser Error Console
+      description: Read [http://ggnome.com/wiki/Using_The_Browser_Error_Console](ggnome.com/wiki/Using_The_Browser_Error_Console) if you are unsure what to put here
+      render: text
